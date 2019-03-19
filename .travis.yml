@@ -4,7 +4,7 @@ node_js:
   - "10.15.3"
 addons: 
   chrome: stable
-before_install:
-  - npm install
-  - npm install mocha -g
+before_script:
   - npm install -g karma-cli
+script:
+  - karma start --single-run
